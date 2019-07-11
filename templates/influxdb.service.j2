@@ -1,0 +1,19 @@
+[Unit]
+Description=Influxdb instance
+Documentation=http://docs.grafana.org
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=influxdb
+Group=influxdb
+Type=simple
+Restart=on-failure
+WorkingDirectory={{ install_dir }}
+ExecStart={{ install_dir }}/usr/bin/influxd
+
+LimitNOFILE=10000
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
