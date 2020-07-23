@@ -58,7 +58,7 @@ bind-address = "127.0.0.1:8088"
   enabled = true
   bind-address = ":8086"
   auth-enabled = true
-  log-enabled = true
+  log-enabled = false
   write-tracing = false
   pprof-enabled = true
   https-enabled = false
@@ -124,7 +124,7 @@ bind-address = "127.0.0.1:8088"
   log-point-errors = true
 
 [[udp]]
-  enabled = true
+  enabled = false
   bind-address = ":8089"
   database = "templogger"
   retention-policy = ""

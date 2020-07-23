@@ -1,6 +1,4 @@
-ver: 1.7.9
-if_username: bec
-if_password: "beclinux"
+ver: 1.8.1
 tarball_loc: /root/influxdb-{{ ver }}.tar.gz
 install_base: /opt
 install_dir: "{{ install_base }}/influxdb-{{ ver }}-1"

@@ -38,6 +38,7 @@
   with_items:
     - /home/influxdb
     - /etc/influxdb
+    - /var/lib/influxdb
 
 - name: influxdb conf file
   template: src=influxdb.conf.j2 dest=/etc/influxdb/influxdb.conf
